@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color:rgb(55, 55, 230);
+    --white-color: white;
+
+}
+body {
+    font-family: 'Kalam', cursive;
+    margin: 0px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+header {
+    text-align: center;
+    background-color: yellow;;
+    margin: 0;
+    width: 100%;
+    font-size: 25px;
+}
+
+h1 {
+    margin: 0;
+    padding: 30px;
+}
+
+.input-area {
+    text-align: center;
+    display: block;
+}
+
+textarea {
+    display: block;
+    width: 30%;
+    height: 15vh;
+    margin: 3rem 35% 1rem;
+    min-width: 210px;
+    padding: 2%;
+    
+}
+
+button {
+    font-family: 'Kalam', cursive;
+    margin-right:48%;
+    padding: 0.5% 2%;
+    color: var(--primary-color)
+}
+
+.minion {
+    width: 20%;
+    float: left;
+    margin-left: 5rem;
+}
+
+.minion-alt {
+    visibility: hidden;
+    width: 0px;
+}
+
+.img-alt {
+    visibility: hidden;  
+}
+
+.output-block {
+    display: block;
+    margin: 10% auto 1rem;
+    text-align: center;
+}
+
+.minion2 {
+    width: 20%;
+    float: right;
+    margin: auto 5%;
+}
+
+.para {
+    margin-right: 40%;
+    font-size: 20px;
+}
+
+#output {
+    background-color: white;
+    border: 1px solid;
+    border-radius: 2px;
+    height: 15vh;
+    width: 30%;
+    padding: 2%;
+    display: block;
+    margin: 20px 40% auto;
+    color: black;
+    min-width: 210px;
+}
+
+footer {
+    margin: 0;
+    text-align: center;
+    margin:6.5rem auto 0;
+    color: yellow;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: yellow;
+}
+
+@media(max-width:710px) {
+    body {
+        text-align: center;
+    }
+    
+    textarea {
+        margin: 3rem auto 1rem;
+    }
+
+    
+    .minion2 {
+        float: none;
+        margin: auto;
+        display: block;
+    }
+
+    .minion {display: none;}
+    .minion-alt {
+        visibility: visible;
+        width: 20%;  
+    }
+    .img-alt {
+        visibility: visible;
+    }
+    #output {
+        margin: auto;
+    }
+
+    .para {
+        margin: auto;
+    }
+
+ 
+}
+
