@@ -6,9 +6,8 @@ var outputDiv = document.querySelector("#output");
 
 var serverURL = "https://api.funtranslations.com/translate/minion.json"
 
-const getTranslationURL = text => {
-    return `${serverURL}?text=${text}`;
-}
+const getTranslationURL = text =>  `${serverURL}?text=${text}`;
+
 
 function errorHandler(error) {
     console.log(`error occured, ${error}`);
