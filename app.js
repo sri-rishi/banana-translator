@@ -6,19 +6,16 @@ var outputDiv = document.querySelector("#output");
 
 var serverURL = "https://api.funtranslations.com/translate/minion.json"
 
-
-//  var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
-
-function getTranslationURL(text) {
-    return serverURL+"?"+"text=" + text;
+const getTranslationURL = text => {
+    return `${serverURL}?text=${text}`;
 }
 
 function errorHandler(error) {
-    console.log("error occured", error);
+    console.log(`error occured, ${error}`);
     alert("something went wrong, please try after some time");
 }
 
-function clickHandler() {
+const clickHandler = () => {
     var inputText = txtInput.value;
     
     fetch(getTranslationURL(inputText))
